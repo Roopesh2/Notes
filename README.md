@@ -1,4 +1,4 @@
-# Reporter
+# Notes
 A tool to note daily activites.
 
 # Goals:
