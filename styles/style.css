@@ -39,7 +39,6 @@ main {
 header {
   position: fixed;
   top: 0px;
-  height: var(--header-height);
   width: 100%;
   background-color: var(--theme);
   color: var(--theme-color);
@@ -49,7 +48,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 10px 0 10px;
+  padding: 10px;
   transition: all 0.3s ease;
 }
 
