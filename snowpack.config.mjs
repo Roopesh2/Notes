@@ -3,23 +3,22 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
-  mount: {
-    /* ... */
-  },
-  plugins: [
+  exclude: [
+    "**/node_modules",
+    "**/*.rules",
+    "**/*.json*",
+    "**/*.config.mjs",
+    "**/README.md",
+    "**/.firebase/*"
   ],
-  packageOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
-   optimize: {
+  mount: {},
+  plugins: [],
+  packageOptions: {},
+  devOptions: {},
+  buildOptions: {},
+  optimize: {
+    sourcemap: false,
     bundle: true,
     minify: true,
-    target: 'es2018',
   },
 };
